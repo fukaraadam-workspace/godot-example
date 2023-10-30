@@ -17,4 +17,9 @@ public partial class MoveAround : Sprite2D
     var velocity = Vector2.Up.Rotated(Rotation) * _speed;
     Position += velocity * (float)delta;
   }
+
+  private void OnButtonPressed()
+  {
+    SetProcess(!IsProcessing());
+  }
 }

@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://b20b33cr3is3l"]
 
 [ext_resource type="PackedScene" uid="uid://deai7jw5l8gtf" path="res://sprite_2d.tscn" id="1_n7bfk"]
-[ext_resource type="Script" path="res://move_around.gd" id="2_d2xjr"]
+[ext_resource type="Script" path="res://MoveAround.cs" id="2_akivm"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" parent="." instance=ExtResource("1_n7bfk")]
-script = ExtResource("2_d2xjr")
+script = ExtResource("2_akivm")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 236.0
@@ -15,4 +15,4 @@ offset_right = 446.0
 offset_bottom = 215.0
 text = "Toggle Motion"
 
-[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="Sprite2D" method="OnButtonPressed"]
