@@ -10,6 +10,12 @@ public partial class MoveAround : Sprite2D
     GD.Print("Hello, world!");
   }
 
+  public override void _Ready()
+  {
+    var timer = GetNode<Timer>("Timer");
+    timer.Timeout += OnTimerTimeout;
+  }
+
   public override void _Process(double delta)
   {
     Rotation += _angularSpeed * (float)delta;
@@ -21,5 +27,10 @@ public partial class MoveAround : Sprite2D
   private void OnButtonPressed()
   {
     SetProcess(!IsProcessing());
+  }
+
+  private void OnTimerTimeout()
+  {
+    Visible = !Visible;
   }
 }
