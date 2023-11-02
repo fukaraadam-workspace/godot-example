@@ -1,6 +1,8 @@
 {
   "editor.formatOnSave": true,
   "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
   "[gdscript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": false
