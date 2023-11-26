@@ -10,11 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Tutorial-dotnet"
-run/main_scene="res://auto_motion.tscn"
+config/name="scripting"
+run/main_scene="res://move_around.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Tutorial-dotnet"
+project/assembly_name="ScriptingDotnet"

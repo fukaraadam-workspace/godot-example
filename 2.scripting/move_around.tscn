@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b20b33cr3is3l"]
 
-[ext_resource type="PackedScene" uid="uid://deai7jw5l8gtf" path="res://user_motion.tscn" id="1_j80oq"]
+[ext_resource type="PackedScene" uid="uid://deai7jw5l8gtf" path="res://player_input.tscn" id="1_j80oq"]
 [ext_resource type="Script" path="res://MoveAround.cs" id="2_4t8p0"]
 
 [node name="Node2D" type="Node2D"]
