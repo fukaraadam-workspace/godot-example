@@ -72,6 +72,15 @@ func _physics_process(delta):
 				break
 	
 	move_and_slide()
+	
+	# Animation
+	if direction != Vector3.ZERO:
+		#...
+		$AnimationPlayer.speed_scale = 4
+	else:
+		$AnimationPlayer.speed_scale = 1
+		
+	$Pivot.rotation.x = PI / 6 * velocity.y / jump_impulse
 
 func die():
 	hit.emit()
