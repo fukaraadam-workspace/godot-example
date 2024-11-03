@@ -7,6 +7,7 @@
 radius = 1.02165
 
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 6
 script = ExtResource("1_rpk5l")
 
 [node name="Pivot" type="Node3D" parent="."]
